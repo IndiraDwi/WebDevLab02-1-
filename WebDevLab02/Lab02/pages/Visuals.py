@@ -49,8 +49,10 @@ if "csv_data" not in st.session_state:
         st.session_state.csv_data = pd.DataFrame() 
 if "json_data" not in st.session_state:
     try:
-        if os.path.exists("data.json"):
-            with open("data.json", "r") as file:
+        json_path = os.path.join(os.path.dirname(__file__), "..", "data.json")
+
+        if os.path.exists(json_path):
+            with open(json_path, "r") as file:
                 data = json.load(file)                        
             if isinstance(data, list):
                 st.session_state.json_data = pd.DataFrame(data)
