@@ -1,0 +1,17 @@
+{
+    "chart_title": "Smoothie Chart Data",
+    "dataPoints": [
+        {
+            "label": "Strawberry Banana",
+            "value": 7
+        },
+        {
+            "label": "Blueberry Acai",
+            "value": 9
+        },
+        {
+            "label": "Mango Pineapple",
+            "value": 6
+        }
+    ]
+}
